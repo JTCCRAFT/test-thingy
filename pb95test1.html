@@ -1,7 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>PB95 TEST 1</title>
+    <title>PB95 Test v1</title>
+    <style>
+      body {
+        /* Tahoma was the default Windows 2000 system font */
+        font-family: "Tahoma", "MS Sans Serif", Arial, sans-serif;
+        font-size: 11px;
+        background-color: #d4d0c8; /* Classic Win2000 desktop/dialog gray */
+        margin: 20px;
+      }
+
+      #button1 {
+        font-family: "Tahoma", "MS Sans Serif", Arial, sans-serif;
+        font-size: 11px;
+        color: #000000;
+        background-color: #d4d0c8;
+        padding: 4px 12px;
+        border-top: 1.5px solid #ffffff;
+        border-left: 1.5px solid #ffffff;
+        border-right: 1.5px solid #808080;
+        border-bottom: 1.5px solid #808080;
+        box-shadow: inset 1px 1px 0px #ffffff, inset -1px -1px 0px #0a0a0a;
+        cursor: default;
+      }
+
+      #button1:active {
+        border-top: 1.5px solid #808080;
+        border-left: 1.5px solid #808080;
+        border-right: 1.5px solid #ffffff;
+        border-bottom: 1.5px solid #ffffff;
+        box-shadow: inset 1px 1px 0px #0a0a0a;
+        padding: 5px 11px 3px 13px; /* Shifts text slightly down/right when clicked */
+      }
+    </style>
   </head>
   <body>
     <button type="button" id="button1" onclick="this.style.display='none'">Bonus</button>
